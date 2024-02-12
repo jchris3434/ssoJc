@@ -1,0 +1,28 @@
+version: "3"
+
+services:  
+  server:
+    build: ./backEnd
+    container_name: node_server_ssoProject
+    depends_on:
+      - mongojc    
+    ports:
+      - 12456:12456
+    volumes:
+      - ./backEnd:/usr/src/app
+    environment:
+      - MONGO_URL=mongodb://mongojc:27017/kitty
+  mongojc:
+    image: mongo:latest
+    container_name: Mongo_SSO
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: adminBibi
+    #   MONGO_INITDB_ROOT_PASSWORD: bibi
+    ports:
+      - 27017:27017
+    volumes:
+      - dbdata:/var/lib/mongodb
+volumes:
+  dbdata:
+    
+    

@@ -1,0 +1,6 @@
+projectKey=ssoTestSonarQube
+serverUrl=http://localhost:9000
+serverVersion=10.3.0.82913
+dashboardUrl=http://localhost:9000/dashboard?id=ssoTestSonarQube
+ceTaskId=AYvYd4pOZsUzugXyaz2i
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYvYd4pOZsUzugXyaz2i

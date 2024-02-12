@@ -1,0 +1,45 @@
+{
+    "name": "sso",
+    "version": "1.0.0",
+    "description": "outil SSO",
+    "author": "beweb",
+    "main": "serverSso.js",
+    "scripts": {
+        "start": "node serverSso.js",
+        "lint": "eslint --fix --ext .js, .",
+        "test": "jest"
+    },
+    "dependencies": {
+        "axios": "^1.5.1",
+        "bcrypt": "^5.1.1",
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "eslint": "^8.52.0",
+        "express": "^4.18.2",
+        "git": "^0.1.5",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^7.6.3",
+        "multer": "^1.4.5-lts.1",
+        "nodemon": "^3.0.1",
+        "swagger": "^0.6.0",
+        "typescript": "^5.2.2",
+        "winston": "^3.11.0"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@types/bcrypt": "^5.0.1",
+        "@types/cors": "^2.8.15",
+        "@types/express": "^4.17.20",
+        "@types/jest": "^29.5.8",
+        "@types/jsonwebtoken": "^9.0.4",
+        "@types/mocha": "^10.0.4",
+        "@types/mongoose": "^5.11.97",
+        "@types/supertest": "^2.0.16",
+        "jest": "^29.7.0",
+        "mongodb-memory-server": "^9.1.1",
+        "supertest": "^6.3.3",
+        "ts-jest": "^29.1.1",
+        "ts-node": "^10.9.1"
+    }
+}
